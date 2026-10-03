@@ -1,0 +1,39 @@
+# Swift Package Manager build products
+.build/
+
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+.swiftpm/
+
+# macOS
+.DS_Store
+
+# Code-Doku bleibt lokal, nicht im Repo
+Dokumentation/CodeDoku/
+
+# --- ergaenzt am 27.09.2026 ---
+dist/
+node_modules/
+.git [0-9]*/
+.gitignore.vorher_*
+*.lock.gelost_*
+
+# --- Grundsatz, ergaenzt am 28.09.2026 ---
+# LibreOffice-Sperrdateien
+.~lock.*
+# Artefakte des Netzlaufwerks
+.fuse_hidden*
+# macOS-Ordnersymbol
+Icon?
+# Zwischenergebnisse aus Cowork
+Claude outputs/
+# Ablage fuer Abgeloestes
+_to_delete/
+# Ablage fuer Abgeloestes
+_zum_loeschen/
+# Papierkorb aus dem Aufraeumen
+_Papierkorb/

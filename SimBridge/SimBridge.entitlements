@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App is sandboxed so it can hand the extension a working security-scoped
+	     bookmark (the only reliable way a File Provider extension may read a
+	     user-granted folder). -->
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+
+	<!-- User grants a folder (e.g. a Simulator container) via the open panel. -->
+	<key>com.apple.security.files.user-selected.read-write</key>
+	<true/>
+
+	<!-- Persist that grant as a security-scoped bookmark and share it with the
+	     extension through the App Group. -->
+	<key>com.apple.security.files.bookmarks.app-scope</key>
+	<true/>
+
+	<!-- Shared container between app and File Provider extension. -->
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.de.andreasmaser.SimBridge</string>
+	</array>
+</dict>
+</plist>
